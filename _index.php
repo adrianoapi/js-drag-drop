@@ -19,7 +19,8 @@
         </script>
     </head>
     <body>
-        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-        <img id="drag1" src="img_logo.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+        <div>
+            <img src="file://192.168.0.135/beta1/drag_drop/assets/img/img_logo.gif">
+        </div>
     </body>
 </html>
