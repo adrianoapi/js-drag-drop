@@ -2,5 +2,20 @@
 <html>
     <head>
         <title>Drag Drop JavaScript</title>
+        <script>
+            function allowDrop() {
+                ev.preventDefault();
+            }
+
+            function drag(ev) {
+                ev.dataTransfer.setData("text", ev.target.id);
+            }
+
+            function drop(ev) {
+                ev.preventDefautl();
+                var data = ev.dataTransfer.getData("text");
+                ev.target.appendChild(document.getElementById(data));
+            }
+        </script>
     </head>
 </html>
